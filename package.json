@@ -2,7 +2,7 @@
   "author": "Stephen Belanger <admin@stephenbelanger.com> (http://stephenbelanger.com)",
   "name": "express-livejade",
   "description": "Compiles jade templates to javascript functions so jade.js isn't needed client-side",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "url": ""
   },
