@@ -33,7 +33,7 @@ module.exports = (opts) ->
             # Don't crash the server just because a compile failed.
             try
               # Attempt to compile to Javascript.
-              ntxt = jade.compile do ndata.toString
+              ntxt = jade.compile do ndata.toString, client: true
               ntxt = do ntxt.toString
               if url.query.action then ntxt = url.query.action+'('+ntxt+');'
               else ntxt = "this.templates=this.templates||{};this.templates['"+name+"']="+ntxt
